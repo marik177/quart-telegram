@@ -1,7 +1,4 @@
 from qrcode import QRCode
-from PIL import Image
-from io import BytesIO
-import base64
 
 
 class QRCodeBot(QRCode):
