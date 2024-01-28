@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+  <h2>Login</h2>
+<form method='post' action="/login/" class="mt-5 ms-3">
+    Phone (international format): <input name='phone' type='text' placeholder='+71230000000'>
+    <input type='submit'>
+</form>
+  <div class="mt-5">
+  {% if data %}
+    <p>{{ data }}</p>
+{% endif %}
+  </div>
+{% endblock content %}

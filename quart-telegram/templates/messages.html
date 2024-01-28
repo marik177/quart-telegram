@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Messages for dialog: {{ dialog_title }}</h1>
+{% for message in messages %}
+  {{ message }}
+  <br>
+  <hr>
+{% endfor %}
+
+{% endblock content %}

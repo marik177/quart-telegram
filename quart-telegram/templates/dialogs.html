@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+   <h1>Dialogs</h1>
+   <p>Phone: {{ phone }}</p>
+    <ul>
+        {% for dialog in dialogs %}
+            <li><a href="{{ url_for('list_chat_messages', phone=phone ,uname=dialog) }}">{{ dialog }}</a></li>
+        {% endfor %}
+    </ul>
+
+{% endblock content %}

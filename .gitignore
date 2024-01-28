@@ -1,0 +1,9 @@
+.env
+bot.session
+.idea
+
+venv/
+__pycache__
+
+*.session*
+*.sqlite

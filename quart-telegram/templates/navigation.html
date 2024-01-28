@@ -1,0 +1,16 @@
+<nav>
+  <div class="container my-3">
+    <div class="row">
+    <div class="col"><a href="{{ url_for('home') }}">Home</a></div>
+      {% if not current_user.is_authenticated %}
+       <div class="col"><a href="{{ url_for('login') }}">Login</a></div>
+      {% endif %}
+    <div class="col"><a href="{{ url_for('check_login') }}">Check Login</a></div>
+    <div class="col"><a href="{{ url_for('send_message') }}">Send message</a></div>
+    <div class="col"><a href="{{ url_for('list_dialogs') }}">List Dialogs</a></div>
+    {% if current_user.is_authenticated %}
+       <div class="col"><a href="{{ url_for('logout') }}">Logout</a></div>
+      {% endif %}
+      </div>
+    </div>
+</nav>

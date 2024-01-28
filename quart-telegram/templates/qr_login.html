@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+  <h1>QR Code Example</h1>
+    <img src="{{ url_for('generate_qrcode_route') }}" alt="QR Code">
+{% endblock content %}
